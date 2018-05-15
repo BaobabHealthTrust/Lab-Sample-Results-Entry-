@@ -69,8 +69,16 @@ class SampleController < ApplicationController
 
 
 	def create_sample
-		raise params[:data].inspect
+		@details = JSON.parse(params[:data]).split(",")
 
+	end
+
+	def create
+
+		redirect_to '/sam' and return
+	end
+
+	def sample
 
 	end
 

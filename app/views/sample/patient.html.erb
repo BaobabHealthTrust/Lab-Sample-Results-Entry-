@@ -108,7 +108,7 @@ function addBTN(identifier,p_name,gender,birthdate) {
 function createLabSample(identifier,p_name,gender,birthdate) {
   data = [ identifier,p_name, gender,birthdate ].join();
 
-  document.location = "/create_sample/?data=" + JSON.stringify(data);
+  document.location = "/create_sample?data=" + JSON.stringify(data);
 
 }
 
